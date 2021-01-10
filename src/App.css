@@ -53,14 +53,38 @@
 .listMeny {
     padding: 0px;
     margin: 0px;
-    /* width: 250px; */
-    width: 40px;
+    transition: 3s;
+    width: 37px;
     border-radius: 0px 0px 0px 7px;
     background-color: #C4C4C4;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.listMeny::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ffffff;
+}
+
+.listMeny::-webkit-scrollbar-thumb {
+    background-color: #ff5d2ca6;
+}
+
+
+.listMeny::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(105, 105, 105, 0.3);
+    background-color: #F5F5F5;
+}
+
+.listMeny:hover {
+    width: 250px;
+    transition: 3s;
+
 }
 
 .listMeny > input {
     width: 100%;
+    padding-left: 12px;
     height: 30px;
     margin-bottom: 5px;
     background-color: #b4b4b4;
@@ -70,6 +94,14 @@
 
 .listMeny > input:hover {
     background-color: #a5a5a5;
+}
+
+input.del:hover {
+    background-color: #d67b7b;
+}
+
+input.save:hover {
+    background-color: #7bd687;
 }
 
 .listSpase {
