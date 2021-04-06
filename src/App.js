@@ -76,7 +76,7 @@ export default class App extends Component {
   };
   bold = () => {
     let txt = "";
-    // newSms = "";
+    // newSms = "";1233
     // if (txt = window.getSelection) {
     //   txt = window.getSelection().toString();
     // } else {
