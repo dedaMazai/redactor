@@ -74,6 +74,16 @@ export default class App extends Component {
       select: data
     });
   };
+  bold = () => {
+    let txt = "";
+    // newSms = "";
+    // if (txt = window.getSelection) {
+    //   txt = window.getSelection().toString();
+    // } else {
+    //   txt = document.selection.createRange().text;
+    // }
+    this.ref.current.value = txt;
+  };
   render() {
     return (
       <div className="App">
@@ -81,7 +91,7 @@ export default class App extends Component {
         <div className="list">
           <div className="listHeader">
             <input type="button" value="Создать новый"  onClick={this.new}></input>
-            <input type="button" value="Ж"></input>
+            <input type="button" value="Ж" onClick={this.bold}></input>
             <input type="button" value="К"></input>
             <input type="button" value="Ч"></input>
             <input type="button" value="ВР"></input>
@@ -97,8 +107,7 @@ export default class App extends Component {
               <option>22</option>
               <option>24</option>
             </select>
-            <input type="button" value="Фон"></input>
-            <input type="button" value="Вставить"></input>
+            <input type="button" value="Выделить"></input>
             <input type="button" value="&equiv;"></input>
             <input type="button" className="del" value="Удалить" onClick={this.clear}></input>
             <input type="button" className="save" value="Cохранить" onClick={this.changeInput}></input>
