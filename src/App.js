@@ -87,7 +87,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Редактор текста...</h1>
+        <h1>ТвОй БАНер...ру</h1>
         <div className="list">
           <div className="listHeader">
             <input type="button" value="Создать новый"  onClick={this.new}></input>
