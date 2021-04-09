@@ -22,6 +22,7 @@
 }
 
 .listHeader {
+    display: flex;
     padding: 0px 40px;
     margin: 0px;
     height: 40px;
@@ -109,6 +110,15 @@ input.save:hover {
     width: 100%;
     background-color: #DEDEDE;
 }
+input[type="color"] {
+    border: none;
+    outline: none;
+    height: 70%;
+    margin: 5px 0px;
+    overflow: hidden;
+    cursor: inherit;
+    margin-left: 15px;
+  }
 
 p {
     padding: 0px;
@@ -128,6 +138,7 @@ textarea {
 }
 
 select {
+    margin: auto 0px;
     border: none;
     outline: none;
     height: 25px;

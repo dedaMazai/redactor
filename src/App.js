@@ -91,13 +91,19 @@ export default class App extends Component {
         <div className="list">
           <div className="listHeader">
             <input type="button" value="Создать новый"  onClick={this.new}></input>
+            <select name="size">
+              <option  hidden >Размер банера</option> 
+              <option>160х600</option>
+              <option>240х600,</option>
+              <option>300х300</option>
+              <option>300х600</option>
+              <option>320х100</option>
+              <option>320х480</option>
+              <option>480х320</option>
+              <option>970х250</option>
+            </select>
             <input type="button" value="Ж" onClick={this.bold}></input>
-            <input type="button" value="К"></input>
-            <input type="button" value="Ч"></input>
-            <input type="button" value="ВР"></input>
-            <input type="button" value="НР"></input>
-            <select>
-              <option>10</option>
+            <select name="language">
               <option>11</option>
               <option>12</option>
               <option>14</option>
@@ -107,8 +113,9 @@ export default class App extends Component {
               <option>22</option>
               <option>24</option>
             </select>
-            <input type="button" value="Выделить"></input>
-            <input type="button" value="&equiv;"></input>
+            <input type="color"></input>
+            <input type="button" value="Картинка"></input>
+            <input type="button" value="Центрировать"></input>
             <input type="button" className="del" value="Удалить" onClick={this.clear}></input>
             <input type="button" className="save" value="Cохранить" onClick={this.changeInput}></input>
           </div>
